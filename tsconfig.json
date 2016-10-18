@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "maxNodeModuleJsDepth": 1,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "dist/",
+        "target": "es2015",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}

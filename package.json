@@ -1,0 +1,38 @@
+{
+  "name": "nullurl",
+  "version": "1.0.0",
+  "main": "dist/app/index.js",
+  "repository": {
+    "url": "github.com/sshikshu/nullurl-api",
+    "type": "git"
+  },
+  "scripts": {
+    "nodemon": "nodemon",
+    "prestart": "tsc",
+    "start": "concurrently --kill-others \"tsc -w\"  \"nodemon dist/app/index.js\"",
+    "tsc": "tsc"
+  },
+  "author": "shashwat shikshu <shashwat.shikshu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "kcors": "2",
+    "koa": "2",
+    "koa-bodyparser": "3",
+    "koa-jwt": "2",
+    "koa-logger": "2",
+    "koa-router": "next",
+    "mongoose": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.33",
+    "@types/koa-bodyparser": "^3.0.20",
+    "@types/koa-logger": "^2.0.1",
+    "@types/koa-router": "^7.0.21",
+    "@types/mongoose": "^4.5.38",
+    "@types/node": "^6.0.45",
+    "concurrently": "^3.1.0",
+    "nodemon": "^1.11.0",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3"
+  }
+}
