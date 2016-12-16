@@ -1,4 +1,4 @@
-import * as mongoose from 'mongoose';
+import * as mongoose from 'mongoose'
 
 const urlSchema = new mongoose.Schema({
     long: {
@@ -15,6 +15,6 @@ const urlSchema = new mongoose.Schema({
     tags: {
         type: [String]
     }
-});
+})
 
-export const urlModel = mongoose.model('url', urlSchema);
+export const urlModel = mongoose.model('url', urlSchema)
